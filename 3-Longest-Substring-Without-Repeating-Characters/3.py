@@ -12,8 +12,8 @@ class Solution:
                     res = res if len(res)>len(buff) else buff
                 else:
                     res = buff
-                # buff = buff.split(i)[1]     # 170ms
-                buff = buff[buff.index(i)+len(i):]   # 139ms
+                # buff = buff.split(i)[1]     # 170ms split the string by character
+                buff = buff[buff.index(i)+len(i):]   # 139ms split the string by index
             buff += i
 
         # return res if len(res)>len(buff) else buff
